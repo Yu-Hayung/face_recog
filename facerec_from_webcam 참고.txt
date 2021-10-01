@@ -1,0 +1,19 @@
+﻿"얼굴 검출 ","face recognition"
+"라이브러리 ","face_recognition"
+"얼굴 인식 방법 ","dlib , LANDMARK"
+"진행 환경","OS - Windows 10 이상 / python = 3.7 / cmake =  / numpy = /  face_recognition = / "
+"저장 이미지 형태","jpg, png, jpeg / 흑백여부 = 무관 / 이미지파일 명 중복 불가능 "
+
+"저장 이미치 처리 방법 "
+이미지에서 얼굴 검출후 ROI를 지정하여 이미지 전처리후 128차원 얼굴 인코딩을 반환 
+/ cnn 방식을 사용하여 이미지에서 사람 얼굴의 dlib 사각형의 2차원 배열을 반환
+ / 얼굴 인코딩 목록을 후보 인코딩과 비교하여 일치 여부 확인
+ + GPU-CUDA  모델 사용할 경우 더 빠르게 작동"
+
+이미지 처리 시간 : 1장 약 0.38초  
+
+"검출 영상 형태 ","흑백여부 = 무관 / 마스크 착용시 분석 불가능 " 마스크 이미지를 등록할 경우 마스크 착용한 얼굴로 검출 가능"
+"검출 대조 ","저장된 이미지와 다른 헤어 및 메이크업에도 작동  / 저장된 이미지에 대한 해당 안면만 검출 "
+
+face_encodings(face_image, known_face_locations=None, num_jitters=1, model="small")
+compare_faces(known_face_encodings, face_encoding_to_check, tolerance=0.3)
