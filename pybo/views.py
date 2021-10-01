@@ -23,6 +23,7 @@ def post(request):
     # response_dict = {"msessage": "OK", "status": "200"}
 
     result = '일치 : 0 / 불일치 : 1 >>>>   결과 : ', analysis_result
+    # asdasdd
 
     return HttpResponse(result, status=200)
     # return JsonResponse(response_dict)
