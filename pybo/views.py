@@ -27,3 +27,5 @@ def post(request):
 
     return HttpResponse(result, status=200)
     # return JsonResponse(response_dict)
+
+

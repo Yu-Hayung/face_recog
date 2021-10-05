@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#^^xbrx8+icmzvx+irf)wbwq=@hqf9^-8lj&%vx0wp5kt@8-^8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS = ['172.31.17.30',
     # 접속 한정 API 설정
     '*',
 ]
